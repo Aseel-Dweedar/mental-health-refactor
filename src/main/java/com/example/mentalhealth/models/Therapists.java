@@ -55,9 +55,6 @@ public class Therapists implements UserDetails{
         this.experiences = experiences;
         this.numOfSessions = numOfSessions;
         this.isEnabled = false;
-        System.out.println("22222222222222222222222");
-        System.out.println(this.isEnabled);
-        System.out.println("22222222222222222222222");
     }
 
 
@@ -185,5 +182,24 @@ public class Therapists implements UserDetails{
 
     public void setEnabled(boolean enabled) {
         isEnabled = enabled;
+    }
+
+    @Override
+    public String toString() {
+        return "Therapists{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", image='" + image + '\'' +
+                ", country='" + country + '\'' +
+                ", SpecializedIn='" + SpecializedIn + '\'' +
+                ", experiences='" + experiences + '\'' +
+                ", numOfSessions=" + numOfSessions +
+                ", isEnabled=" + isEnabled +
+                ", time=" + time +
+                ", Consultation=" + Consultation +
+                '}';
     }
 }

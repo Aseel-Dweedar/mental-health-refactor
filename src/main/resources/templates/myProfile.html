@@ -368,7 +368,7 @@
                 <div class="modal-body mx-3">
                     <div class="container rounded bg-white mt-5 mb-5">
                         <div class="row">
-                            <form th:if="${applicationUser}" th:action="@{/editProfile}" method="get"
+                            <form th:if="${applicationUser}" th:action="@{/editProfile}" th:method="PUT"
                                   class="col-md-12 ">
                                     <div class="row mt-2">
                                         <div class="col-md-6"><label class="labels">First name</label><input
@@ -395,7 +395,7 @@
                                         <button type="submit" class="btn btn-info">Save Profile</button>
                                     </div>
                             </form>
-                            <form th:unless="${applicationUser}" th:action="@{/editProfile}" method="get"
+                            <form th:unless="${applicationUser}" th:action="@{/editProfile}" th:method="PUT"
                                   class="col-md-12">
                                     <div class="row mt-2">
                                         <div class="col-md-6"><label class="labels">First name</label><input
